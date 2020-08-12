@@ -11,4 +11,56 @@ html {
 	font-size: 20px;
 	font-weight: 400;
 	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+}
+
+h1 {
+	font-size: 150%;
+	padding: 3rem;
+	text-align: center;
+}
+
+span {
+	color: #f22;
+}
+
+button {
+	border: none;
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	color: #f22;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.counter-btn {
+	/*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(tasbeeh.jpeg);
+	background-size: contain;
+	font-weight: 600;*/
+	background-color: #f22;
+}
+
+.counter-btn:hover {
+	background-color: #d00;
+}
+
+footer {
+	padding-top: 2.5rem;
+}
+
+.footer-name {
+	font-size: 70%;
+	font-weight: 100;
+	border-bottom: 1px solid #f22;
 }

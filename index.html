@@ -2,30 +2,41 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=0" />
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<title>Tasbeeh Counter</title>
 </head>
 <body>
 	<header>
-		<h1> <span>YA HUSSAIN</span> TASBEEH </h1>
+		<h1> <span>YA HUSSAIN</span> Tasbeeh </h1>
 	</header>
 
 	<main>
 
-		<div class="row">
-			<p><span>Ya Hussain</span> Tasbeeh 1000 times.</p>
-		</div>
+		<!-- <div class="row">
+			<p>Do <span>Ya Hussain</span> 1000 times</p>
+		</div> -->
 
-		<div class="row">
+		<div class="row counter-container">
 			<h2 class="counter">0</h2>
 		</div>
 
-		<div class="row">
-			<button class="counter-btn" style="color: white;"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-hand-index" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<div class="row click-here-container">
+			<button class="counter-btn" style="color: white;">
+				<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-hand-index" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 	  			<path fill-rule="evenodd" d="M6.75 1a.75.75 0 0 0-.75.75V9a.5.5 0 0 1-1 0v-.89l-1.003.2a.5.5 0 0 0-.399.546l.345 3.105a1.5 1.5 0 0 0 .243.666l1.433 2.15a.5.5 0 0 0 .416.223h6.385a.5.5 0 0 0 .434-.252l1.395-2.442a2.5 2.5 0 0 0 .317-.991l.272-2.715a1 1 0 0 0-.995-1.1H13.5v1a.5.5 0 0 1-1 0V7.154a4.208 4.208 0 0 0-.2-.26c-.187-.222-.368-.383-.486-.43-.124-.05-.392-.063-.708-.039a4.844 4.844 0 0 0-.106.01V8a.5.5 0 0 1-1 0V5.986c0-.167-.073-.272-.15-.314a1.657 1.657 0 0 0-.448-.182c-.179-.035-.5-.04-.816-.027l-.086.004V8a.5.5 0 0 1-1 0V1.75A.75.75 0 0 0 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 0 0-3.5 0v5.34l-1.199.24a1.5 1.5 0 0 0-1.197 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.272-2.715a2 2 0 0 0-1.99-2.199h-.582a5.184 5.184 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.634 2.634 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/></svg>
 	  			<span class="click-here-btn"><strong style="color: white;">Click Here</strong></span>
 	  		</button>
+		</div>
+
+		<div class="row reset-container">
+			<button class="reset-btn">
+				<svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-counterclockwise" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  					<path fill-rule="evenodd" d="M12.83 6.706a5 5 0 0 0-7.103-3.16.5.5 0 1 1-.454-.892A6 6 0 1 1 2.545 5.5a.5.5 0 1 1 .91.417 5 5 0 1 0 9.375.789z"/>
+  					<path fill-rule="evenodd" d="M7.854.146a.5.5 0 0 0-.708 0l-2.5 2.5a.5.5 0 0 0 0 .708l2.5 2.5a.5.5 0 1 0 .708-.708L5.707 3 7.854.854a.5.5 0 0 0 0-.708z"/>
+				</svg>
+				<span>Reset</span>
+			</button>
 		</div>
 	</main>
 

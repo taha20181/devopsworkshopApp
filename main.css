@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  touch-action: manipulation;
 }
 
 
@@ -10,11 +11,13 @@ body, html {
 	font-size: 20px;
 	font-weight: 400;
 	font-family: sans-serif;
-	background-color: white;
+	background-color: #ddd;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 	font-family: all;
+	min-height: 600px;
+	height: 100%;
+
 }
 
 main {
@@ -23,35 +26,41 @@ main {
 
 h1 {
 	font-size: 150%;
-	padding: 3rem;
+	padding: 2rem;
 	text-align: center;
 }
 
 span {
 	color: #f22;
+	padding-left: .2rem;
 }
 
 button {
+	outline: none;
+}
+
+.counter-btn {
 	border: none;
 	height: 10rem;
 	width: 10rem;
 	border-radius: 50%;
 	color: #f22;
+	touch-action: manipulation;
+	background-color: #f22;
 }
 
 .row {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem;
 }
 
-.counter-btn {
-	/*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(tasbeeh.jpeg);
+
+/*.counter-btn {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(tasbeeh.jpeg);
 	background-size: contain;
-	font-weight: 600;*/
-	background-color: #f22;
-}
+	font-weight: 600;
+}*/
 
 .counter-btn:hover {
 	background-color: #d00;
@@ -59,6 +68,23 @@ button {
 
 .click-here-btn {
 	font-size: 150%;
+}
+
+.reset-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .5rem 1rem;
+	font-size: 80%;
+}
+
+.counter-container,
+.click-here-conatiner {
+	padding: 2rem;
+}
+
+.reset-container {
+	padding: 4rem 0 1rem 0;
 }
 
 .footer {

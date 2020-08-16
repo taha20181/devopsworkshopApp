@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Google Maps</title>
-<style type="text/css">
-	position: relative;
-	overflow: hidden;
-	width: 500px;
-	height: 500px;
-</style>
+<title>Password Generator</title>
 </head>
 <body>
 
-	<h1 class="title">Store Locator</h1>
-	<h2>I have just added this recently</h2>
-
-	<div id="map"></div>
-
-	<script>
-		function initMap() {
-			var losAngeles = {
-				lat: 34.063380,
-				lng: -118.358080
-			};
-			map = new google.maps.Map(document.getElementById('map'), {
-				center: losAngeles,
-				zoom: 11,
-				mapTypeId: 'roadmap',
-			});
-		}
-	</script>
-
-	<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLew1RrPesyP9dC9yI907tMzMU4H_Gz0g&callback=initMap">
-    </script>
+	<header>
+		<nav>
+			<div class="container">
+				<div class="navbar-brand">
+					<h1>Password Generator</h1>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<div class="container" style="display: block;">
+				<form style="display: block;">
+					<input type="" name="length" placeholder="Enter the length of the password" required>
+						<label>Number</label>
+						<input type="checkbox" name="alpha">
+						<label>Alpha</label>
+						<input type="checkbox" name="alpha">
+						<label>Special char</label>
+						<input type="checkbox" name="alpha">
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer></footer>
 
 </body>
 </html>

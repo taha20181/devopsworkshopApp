@@ -25,5 +25,3 @@ function counter (count) {
 	})
 }
 
-
-export counter;

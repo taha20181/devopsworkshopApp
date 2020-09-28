@@ -1,6 +1,7 @@
 var counter = document.querySelector(".counter");
 var counter_btn = document.querySelector(".counter-btn");
 var reset_btn = document.querySelector(".reset-btn");
+var decrease = document.querySelector("#decrease");
 
 var count = 0;
 
@@ -19,4 +20,12 @@ counter_btn.addEventListener("click", function() {
 reset_btn.addEventListener("click", function() {
 	count = 0;
 	counter.innerHTML = count;
-})
+});
+
+
+// decrease.addEventListener("click", function() {
+// 	count = count - 1;
+// 	if (count>=0) {
+// 		counter.innerHTML = count;
+// 	}
+// })
